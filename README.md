@@ -29,6 +29,8 @@ In this test your task is to display a list of Rick and Morty episodes with each
 
 ### Expected solution
 
+**Your solution must be fork of this repository!**
+
 1. **You can't add any `npm` packages!.** The main app must work with only `dependencies` delivered in `package.json` (Except of `devDependencies` that you can use for other reasons). The exception of this rule is **IE11** support. 
 2. The main purpose of this test is for you to show your ability to design and implement
    bespoke SPA using React/Redux.  
