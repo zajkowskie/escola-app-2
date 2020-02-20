@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import "./App.css";
 import EpisodesList from "./episodesList/EpisodesList";
-import NextPage from "./nextPage";
 import { rickAndMortyFetch } from "./actions/episodes";
 import { updatePageInfo } from "./actions/page";
 
@@ -14,6 +13,9 @@ export class App extends React.Component {
       isLoading : true
     }
   }
+  /**
+   * Fetch data and store it.
+   */
   componentDidMount() {
     fetch("https://rickandmortyapi.com/api/episode")
       .then(res => res.json())
@@ -24,6 +26,9 @@ export class App extends React.Component {
       .then(this.setState({ isLoading : false}))
   }
 
+  /**
+   * Change data in store after changing page
+   */
   changePage(page){
     this.setState({isLoading : true})
     fetch(page)

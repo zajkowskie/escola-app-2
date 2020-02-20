@@ -1,6 +1,8 @@
 
 import React from 'react';
-
+/**
+ * Display details for episodes
+ */
 export default class EpisodeDetails extends React.Component {
 
     constructor(props) {
@@ -12,6 +14,9 @@ export default class EpisodeDetails extends React.Component {
       }
 
 
+    /**
+     * Fetch characters info for this episode and store them in component
+     */
     componentDidMount(){
 
         const characters = [];
@@ -29,6 +34,10 @@ export default class EpisodeDetails extends React.Component {
         });
       
     }
+
+    /**
+     * Collapse method
+     */
     collapse(){
         this.setState({collapsed : !this.state.collapsed});
 

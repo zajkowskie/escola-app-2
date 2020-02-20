@@ -1,7 +1,9 @@
 
 import React from 'react';
 import EpisodeDetails from './EpisodeDetails';
-
+/**
+ * Row with episode number
+ */
 export default class EpisodeRow extends React.Component {
 
     constructor(props) {
@@ -10,7 +12,9 @@ export default class EpisodeRow extends React.Component {
             collapsed : false
         };
       }
-
+    /**
+     * Collapse method
+     */
     collapse(){
         this.setState({collapsed : !this.state.collapsed});
 

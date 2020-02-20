@@ -2,6 +2,9 @@
 import React from 'react';
 import EpisodeRow from './EpisodeRow';
 
+/**
+ * List component for episodes
+ */
 export default class EpisodesList extends React.Component {
 
     constructor(props) {
@@ -10,7 +13,9 @@ export default class EpisodesList extends React.Component {
             collapsed : false,
         };
     }
-
+    /**
+     * Collapse method
+     */
     collapse(e){
         this.setState({collapsed : !this.state.collapsed});
     }
